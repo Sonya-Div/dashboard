@@ -1,0 +1,159 @@
+/* variables */
+:root{
+    --white:white;
+    --dark: black;
+    --same-black:#001;
+    --dark-blue:#123;
+    --green:green;
+    --gold:gold;
+    --blue:#0481ff;
+    --baby-blue:#0080ff;
+    --dark-red:#a00;
+    --gray:#ffffff55;
+    --navy-blue:#112233ea;
+    --font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    color:var(--white);  
+}
+body{
+    background:var(--same-black);
+    display: flex;
+
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile .image{
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+    overflow: hidden;
+    border: 3px solid var(--white);
+    flex-shrink: 0;
+}
+.profile .image img{
+    width: 100%;
+    height: auto;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu{
+    background:var(--dark-blue);
+    width: 50px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+.menu:hover{
+    width: 260px;
+    transition: 0.5s;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+.menu ul li a{
+display: block;
+text-decoration: none;
+padding: 10px;
+margin: 10px 0;
+border-radius: 8px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 40px;
+transition: 0.5s;
+}
+ul li a:hover,.active , .data-info .box:hover , td:hover{
+    background: var(--gray);
+    border-radius: 10px;
+
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background: var(--dark-red);
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+width: 100%;
+margin: 10px;
+}
+.title-info{
+    background: var(--blue);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.data-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    flex-basis: 150px;
+    height: 150px;
+    background: var(--navy-blue);
+    border-radius: 8px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td , th{
+    background: var(--dark-blue);
+    height: 40px;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+th{
+    background: var(--baby-blue);
+}
+.price .count{
+    padding: 6px;
+    border-radius: 6px;
+    
+}
+.price{
+    background: var(--green);
+    border-radius: 6px;
+}
+.count{
+    background: var(--gold);
+    color: var(--dark);
+    border-radius: 6px;
+}

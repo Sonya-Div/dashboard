@@ -47,8 +47,3 @@ View the project live here: [sonya-div.github.io](sonya-div.github.io)https://so
 يمكنك مشاهدة المشروع مباشرة من هنا: [sonya-div.github.io](sonya-div.github.iohttps://sonya-div.github.io/dashboard/)
 
 ---
-
-## 💻 How to Run / كيف تبدأ
-1. Clone the repository / قم بتحميل المشروع:
-   ```bash
-   git clone github.com
